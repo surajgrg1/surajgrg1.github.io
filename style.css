@@ -137,7 +137,7 @@ img { max-width: 100%; }
 /* About */
 .about-grid { display: grid; grid-template-columns: minmax(200px, .32fr) minmax(0, .68fr); gap: 50px; align-items: start; }
 .about-photo { border: 1px solid var(--line); overflow: hidden; }
-.about-photo img { width: 100%; display: block; object-fit: cover; }
+.about-photo img { width: 100%; height: auto; display: block; object-fit: contain; }
 .about-copy p:not(.eyebrow) { max-width: var(--text-width); margin-bottom: 18px; color: var(--ink-soft); font-size: 1rem; line-height: 1.75; }
 .subhead { margin: 28px 0 14px; font-size: .95rem; letter-spacing: -.01em; }
 .edu-item { display: grid; grid-template-columns: 52px 1fr; gap: 12px; padding: 12px 0; border-top: 1px solid var(--line); }

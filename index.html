@@ -94,8 +94,8 @@
         <span>Consumer experiment participants</span>
       </div>
       <div>
-        <strong>~15%</strong>
-        <span>Estimated post-policy reduction in restaurant violations</span>
+        <strong>37 fewer</strong>
+        <span>Violations per 100 inspections, post-disclosure (SDID estimate)</span>
       </div>
       <div>
         <strong>Ph.D. + Statistics</strong>
@@ -122,14 +122,18 @@
             <span class="status-badge status-wip">Working Paper</span>
           </div>
           <h3>Does public disclosure improve restaurant regulatory compliance?</h3>
-          <p class="research-context">Evaluation of Detroit's "Dining with Confidence" restaurant disclosure policy, using administrative restaurant inspection records.</p>
+          <p class="research-context">Evaluation of Detroit's mandatory "Dining with Confidence" placard-disclosure policy (effective October 2024) against a synthetic comparison built from Michigan municipalities.</p>
           <dl class="research-meta">
-            <div><dt>Data</dt><dd>Administrative restaurant inspection records</dd></div>
-            <div><dt>Methods</dt><dd>Difference-in-Differences · PPML · Event Study · Matching · Synthetic Control · Synthetic DiD</dd></div>
-            <div><dt>Result</dt><dd>Post-policy estimates indicate a reduction in restaurant violations (est. ~15%) and an increase in compliance.</dd></div>
+            <div><dt>Data</dt><dd>Administrative inspection records, Detroit Open Data &amp; five Michigan county portals — 100,634 inspections; balanced panel of Detroit + 37 donor municipalities, Q1 2022–Q3 2025</dd></div>
+            <div><dt>Methods</dt><dd>Synthetic Difference-in-Differences (Arkhangelsky et al. 2021) · TWFE DID · Synthetic Control · Placebo &amp; Leave-One-Donor-Out Tests</dd></div>
+            <div><dt>Result</dt><dd>Preferred SDID estimate: 37 fewer total violations per 100 inspections after the policy (&minus;0.369 per inspection; 95% CI excludes zero), robust to placebo and leave-one-donor-out checks.</dd></div>
           </dl>
-          <div class="research-visual placeholder" role="img" aria-label="Event-study figure placeholder">
-            <span>Figure pending — event-study plot</span>
+          <div class="research-visual">
+            <picture>
+              <source srcset="research-policy-sdid.webp" type="image/webp">
+              <img src="research-policy-sdid.png" alt="Line chart of mean total violations per inspection for Detroit versus its synthetic comparison from 2022 Q1 to 2025 Q3, with the two lines diverging after the October 2024 policy start" width="770" height="475" loading="lazy">
+            </picture>
+            <p class="figure-caption">Figure 1. Mean total violations per inspection: Detroit vs. synthetic comparison (SDID).</p>
           </div>
           <div class="research-actions">
             <a class="text-link" href="mailto:surajgurung26@outlook.com?subject=Dining%20with%20Confidence%20working%20paper">Request working paper ↗</a>
@@ -148,9 +152,6 @@
             <div><dt>Methods</dt><dd>Discrete Choice Experiment · Random Parameters / Mixed Logit · Willingness-to-Pay Estimation</dd></div>
             <div><dt>Result</dt><dd>Private credentials delivered stronger consumer valuation than regulatory oversight.</dd></div>
           </dl>
-          <div class="research-visual placeholder" role="img" aria-label="Willingness-to-pay coefficient plot placeholder">
-            <span>Figure pending — WTP / coefficient plot</span>
-          </div>
           <div class="research-actions">
             <a class="text-link" href="mailto:surajgurung26@outlook.com?subject=Food%20Policy%20manuscript%20request">Request manuscript ↗</a>
           </div>
@@ -167,9 +168,6 @@
             <div><dt>Methods</dt><dd>PLS-SEM · Necessary Condition Analysis (NCA) · fsQCA</dd></div>
             <div><dt>Topics</dt><dd>Consumer behavior · attitudes · perceived risk · trust · subjective norms · behavioral intention</dd></div>
           </dl>
-          <div class="research-visual placeholder" role="img" aria-label="Conceptual model diagram placeholder">
-            <span>Figure pending — conceptual / results pathway diagram</span>
-          </div>
           <div class="research-actions">
             <a class="text-link" href="mailto:surajgurung26@outlook.com?subject=IJHM%20manuscript%20request">Request manuscript ↗</a>
           </div>
@@ -186,9 +184,6 @@
             <div><dt>Methods</dt><dd>Controlled Experiment · Eye Tracking · Behavioral Measurement · In-depth Interviews</dd></div>
             <div><dt>Published in</dt><dd>Natural Hazards Review, 27(4), 2026</dd></div>
           </dl>
-          <div class="research-visual placeholder" role="img" aria-label="Eye-tracking visualization placeholder">
-            <span>Figure pending — eye-tracking visualization / DSS interface</span>
-          </div>
           <div class="research-actions">
             <a class="text-link" href="https://ascelibrary.org/journal/NHREFO" target="_blank" rel="noopener">Read the paper ↗</a>
           </div>
@@ -216,9 +211,6 @@
           <div><dt>Methods</dt><dd>Bayesian Marketing Mix Modeling · Google Meridian · MCMC · Channel Contribution · Incrementality · Budget Allocation · Scenario Analysis</dd></div>
           <div><dt>Result</dt><dd>Modeled reallocation strategy lifted ROI from 0.7 to 0.8 (+$4M incremental revenue potential), with Channel 2 emerging as the most efficient channel (ROI 2.02).</dd></div>
         </dl>
-        <div class="research-visual placeholder" role="img" aria-label="Channel contribution and ROI chart placeholder">
-          <span>Figure pending — channel contribution / ROI chart</span>
-        </div>
       </article>
 
       <div class="project-shelf">
@@ -271,7 +263,7 @@
         <article class="publication-card">
           <span class="status-badge status-wip">Working Paper</span>
           <p class="pub-cite">Gurung, S., Chen, L. A., Gao, Z., Magnier, A., &amp; Ward, P. <em>Dining with Confidence: The Causal Effect of Food Safety Disclosure on Restaurant Compliance.</em></p>
-          <div class="pub-tags"><span>Causal Inference</span><span>Policy Evaluation</span><span>Difference-in-Differences</span></div>
+          <div class="pub-tags"><span>Causal Inference</span><span>Policy Evaluation</span><span>Synthetic DiD</span></div>
           <a class="text-link" href="mailto:surajgurung26@outlook.com?subject=Dining%20with%20Confidence%20working%20paper">Request working paper ↗</a>
         </article>
       </div>
@@ -307,7 +299,10 @@
           <p class="timeline-date">2025</p>
           <h3>Visiting Research Fellow</h3>
           <p class="timeline-org">International Rice Research Institute · Philippines</p>
-          <p>Analyzed panel data on rice-variety adoption to inform technology-diffusion strategy.</p>
+          <ul>
+            <li>Built a Markov-transition modeling framework to study rice varietal regime switching in plot-season panel data under climate shocks.</li>
+            <li>Partnered with IRRI economists and scientists to translate model outputs into policy-relevant guidance for variety targeting and extension.</li>
+          </ul>
         </article>
         <article class="timeline-item">
           <p class="timeline-date">Feb 2021 — Jun 2022</p>
@@ -351,22 +346,29 @@
         <div class="about-photo">
           <picture>
             <source srcset="about.webp" type="image/webp">
-            <img src="about.jpg" alt="Suraj Gurung" width="560" height="880" loading="lazy">
+            <img src="about.jpg" alt="Suraj Gurung" width="720" height="1100" loading="lazy">
           </picture>
         </div>
         <div class="about-copy">
           <p class="eyebrow">About</p>
           <h2>About me.</h2>
-          <p>I am an Assistant Professor of Agribusiness Management at SUNY Cobleskill and hold a Ph.D. in Applied Economics with a minor in Statistics from the University of Florida. My work spans consumer behavior, food markets, policy evaluation, marketing measurement, and behavioral decision research.</p>
+          <p>I am Suraj Gurung, an applied economist and Assistant Professor of Agribusiness Management at the State University of New York at Cobleskill. I received my Ph.D. in Applied Economics, with a minor in Statistics, from the University of Florida. I also hold an M.S. in Agricultural and Resource Economics from the University of Delaware and a B.S. in Agriculture from Agriculture and Forestry University, Nepal.</p>
+          <p>My work spans consumer behavior, food markets, policy evaluation, marketing measurement, and behavioral decision research.</p>
+          <p>I am an enthusiastic traveler who enjoys hiking and trekking in the mountains. I also find joy in cooking and experimenting with flavors while listening to acoustic music.</p>
 
           <h3 class="subhead">Education</h3>
           <div class="edu-item"><span class="edu-year">2026</span><div><strong>Ph.D., Applied Economics</strong><p>Minor in Statistics · University of Florida</p></div></div>
           <div class="edu-item"><span class="edu-year">2022</span><div><strong>M.S., Agricultural &amp; Resource Economics</strong><p>University of Delaware</p></div></div>
+          <div class="edu-item"><span class="edu-year">2019</span><div><strong>B.S., Agriculture</strong><p>Agriculture and Forestry University, Chitwan, Nepal</p></div></div>
 
           <h3 class="subhead">Recognition</h3>
           <ul class="recognition-list">
-            <li>Global Rice Leadership Award — $7,500 research grant, Global Rice Research Foundation (2025)</li>
-            <li>IFAMA Venture Building Case Study Challenge — Third place (2025)</li>
+            <li>AAEA Travel Grant — $500 (2026)</li>
+            <li>Second Place, Florida Agricultural Policy Outlook Poster Competition — $300 (2026)</li>
+            <li>Third Place, SAEA Job Market Paper Competition (2026)</li>
+            <li>Global Rice Leadership Award — $7,500 competitive research funding, Global Rice Research Foundation (2025)</li>
+            <li>Third Place, IFAMA Venture Building Case Study Challenge — 27 teams, $500 (2025)</li>
+            <li>CANR Unique Strength Graduate Fellowship, University of Delaware (2022)</li>
           </ul>
         </div>
       </div>

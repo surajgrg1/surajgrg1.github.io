@@ -22,7 +22,7 @@
         <span>Suraj Gurung</span>
       </a>
       <nav class="links" aria-label="Primary navigation">
-        <a href="#practice">Practice</a>
+        <a href="#about">About</a>
         <a href="#work">Work</a>
         <a href="#research">Research</a>
         <a href="#background">Background</a>
@@ -57,31 +57,16 @@
       <div><strong>15%</strong><span>compliance improvement identified</span></div>
     </section>
 
-    <section class="section practice" id="practice">
-      <div class="section-intro">
-        <p class="eyebrow">How I work</p>
-        <h2>A three-step research process.</h2>
-        <p>Each project moves from framing the decision to building evidence to making the result usable.</p>
-      </div>
-      <div class="practice-grid">
-        <article class="practice-card">
-          <span class="card-number">01</span>
-          <h3>Frame the decision</h3>
-          <p>Translate an ambiguous business or policy question into a measurable outcome, a credible comparison, and an actionable decision rule.</p>
-          <div class="method-list"><span>Measurement strategy</span><span>Power analysis</span></div>
-        </article>
-        <article class="practice-card feature">
-          <span class="card-number">02</span>
-          <h3>Build credible evidence</h3>
-          <p>Use experiments, quasi-experiments, and econometric models to separate causal signal from correlation and noise.</p>
-          <div class="method-list"><span>A/B testing</span><span>DiD · IV · synthetic control</span></div>
-        </article>
-        <article class="practice-card">
-          <span class="card-number">03</span>
-          <h3>Make results usable</h3>
-          <p>Communicate uncertainty, trade-offs, and expected impact clearly so research moves from a finding to a decision.</p>
-          <div class="method-list"><span>Decision support</span><span>Stakeholder communication</span></div>
-        </article>
+    <section class="section about" id="about">
+      <div class="about-grid">
+        <div class="about-photo"><img src="about.jpg" alt="Suraj Gurung at the AAEA &amp; WAEA Annual Meeting"></div>
+        <div class="about-copy">
+          <p class="eyebrow">About</p>
+          <h2>About me.</h2>
+          <p>I'm an applied economist and Assistant Professor of Agribusiness Management at the State University of New York at Cobleskill. I hold a Ph.D. in Applied Economics, with a minor in Statistics, from the University of Florida, and an M.S. in Agricultural and Resource Economics from the University of Delaware.</p>
+          <p>My research examines how people, firms, and institutions respond to economic incentives, information, and policy — with a focus on food-safety regulation, market signals, disclosure policy, and consumer decision-making. I work primarily with applied econometrics and experimental methods, including difference-in-differences, synthetic control, discrete choice experiments, and behavioral models, along with tools like eye-tracking to study decision processes.</p>
+          <p>Outside of research, I enjoy hiking, traveling, and cooking while listening to music.</p>
+        </div>
       </div>
     </section>
 
@@ -91,41 +76,41 @@
           <p class="eyebrow">Selected work</p>
           <h2>Recent applied projects.</h2>
         </div>
-        <p>Projects spanning marketing, consumer research, and policy evaluation.</p>
+        <p>Projects spanning policy evaluation, consumer research, and marketing analytics.</p>
       </div>
 
       <div class="work-list">
         <article class="work-item work-item-featured">
           <div class="work-index">01</div>
           <div class="work-main">
-            <p class="work-type">Marketing effectiveness · Bayesian modeling</p>
-            <h3>Marketing mix modeling for budget allocation</h3>
-            <p>Built a Bayesian marketing mix model with Google Meridian to estimate channel-level contribution and identify a better allocation of a $220M media budget.</p>
-            <div class="work-tags"><span>Bayesian modeling</span><span>MCMC</span><span>Causal inference</span><span>TensorFlow</span></div>
+            <p class="work-type">Policy evaluation · compliance analytics</p>
+            <h3>Policy Evaluation and Multi-Jurisdiction Compliance Analytics</h3>
+            <p>Web-scraped and harmonized inspection and disclosure data across jurisdictions into a unified panel to estimate the causal impact of Detroit's restaurant disclosure policy on food-safety outcomes.</p>
+            <div class="work-tags"><span>Difference-in-Differences</span><span>Event Study</span><span>Synthetic Control</span><span>Python (Web Scraping)</span></div>
           </div>
-          <div class="impact-box"><span>Modeled outcome</span><strong>+$4M</strong><p>incremental revenue potential from a reallocation strategy that lifted ROI from 0.7 to 0.8.</p></div>
+          <div class="impact-box"><span>Estimated effect</span><strong>−15%</strong><p>reduction in violations and a <strong>+4%</strong> increase in compliance.</p></div>
         </article>
 
         <article class="work-item">
           <div class="work-index">02</div>
           <div class="work-main">
-            <p class="work-type">Consumer research · experimental design</p>
-            <h3>Consumer valuation of food-safety signals</h3>
-            <p>Designed a discrete choice experiment to quantify willingness-to-pay for product attributes and food-safety signals. Private credentials created more consumer value than regulatory oversight.</p>
-            <div class="work-tags"><span>Mixed logit</span><span>Choice experiment</span><span>Willingness-to-pay</span></div>
+            <p class="work-type">Consumer research · pricing &amp; market signals</p>
+            <h3>Consumer Demand, Pricing, and Market Signal Analysis</h3>
+            <p>Designed and estimated a discrete choice experiment to quantify willingness-to-pay across product attributes, messaging, and safety signals, then ran A/B-style counterfactuals comparing private credentials with regulatory oversight — private credentials delivered stronger consumer valuation.</p>
+            <div class="work-tags"><span>Mixed Logit</span><span>Choice Experiment</span><span>A/B Testing</span><span>Structural Equation Modeling</span></div>
           </div>
-          <div class="impact-box"><span>Study scale</span><strong>n = 1,200</strong><p>respondents, enabling granular analysis of consumer preferences.</p></div>
+          <div class="impact-box"><span>Study scale</span><strong>n = 1,200</strong><p>respondents in the discrete choice experiment.</p></div>
         </article>
 
         <article class="work-item">
           <div class="work-index">03</div>
           <div class="work-main">
-            <p class="work-type">Policy evaluation · compliance analytics</p>
-            <h3>Restaurant disclosure policy and compliance</h3>
-            <p>Web-scraped and harmonized cross-jurisdiction inspection data to estimate the causal impact of Detroit's restaurant disclosure policy on violations and compliance.</p>
-            <div class="work-tags"><span>Difference-in-differences</span><span>Event study</span><span>Python</span></div>
+            <p class="work-type">Marketing analytics · Bayesian modeling</p>
+            <h3>Marketing Mix Modeling (MMM) with Bayesian Inference</h3>
+            <p>Built a Bayesian MMM using Google Meridian to estimate channel-level contribution and optimize a $220M media budget, identifying a reallocation strategy that lifted ROI from 0.7 to 0.8 — with Channel 2 emerging as the most efficient channel (ROI 2.02).</p>
+            <div class="work-tags"><span>Bayesian Modeling</span><span>MCMC</span><span>Causal Inference</span><span>Python</span><span>TensorFlow</span><span>Marketing Analytics</span></div>
           </div>
-          <div class="impact-box"><span>Estimated effect</span><strong>−15%</strong><p>violations and <strong>+4%</strong> compliance after the policy intervention.</p></div>
+          <div class="impact-box"><span>Modeled outcome</span><strong>+$4M</strong><p>incremental revenue potential from the reallocation strategy.</p></div>
         </article>
       </div>
 
@@ -166,16 +151,22 @@
       <div class="background-grid">
         <div class="timeline">
           <article class="timeline-item current">
-            <p class="timeline-date">2026 — present</p>
+            <p class="timeline-date">Aug 2026 — present</p>
             <h3>Assistant Professor of Agribusiness Management</h3>
             <p class="timeline-org">State University of New York at Cobleskill</p>
-            <p>Lead research on consumer decision-making and market behavior while teaching agricultural economics and marketing.</p>
+            <ul>
+              <li>Lead independent research on consumer decision-making and market behavior, designing experiments and analyzing behavioral data to quantify drivers of choice and evaluate interventions.</li>
+            </ul>
           </article>
           <article class="timeline-item">
-            <p class="timeline-date">2022 — 2026</p>
-            <h3>Graduate Research Assistant</h3>
+            <p class="timeline-date">Aug 2022 — Jul 2026</p>
+            <h3>Research Assistant</h3>
             <p class="timeline-org">University of Florida</p>
-            <p>Built Python and R data pipelines and designed causal analyses for USDA-funded work spanning agribusiness, health, and risk management.</p>
+            <ul>
+              <li>Built and managed data pipelines in Python and R for survey and large-scale administrative data, supporting causal inference and policy evaluation across USDA-funded research projects.</li>
+              <li>Designed and implemented causal inference analyses (DiD, synthetic control, IV) for agribusiness, health, and risk-management projects, informing publication-quality research and grant reports.</li>
+              <li>Communicated statistical findings through peer-reviewed publications, conference presentations, and stakeholder-facing reports.</li>
+            </ul>
           </article>
           <article class="timeline-item">
             <p class="timeline-date">2025</p>
@@ -184,10 +175,13 @@
             <p>Analyzed panel data on rice-variety adoption to inform technology-diffusion strategy.</p>
           </article>
           <article class="timeline-item">
-            <p class="timeline-date">2021 — 2022</p>
-            <h3>Graduate Research Assistant</h3>
+            <p class="timeline-date">Feb 2021 — Jun 2022</p>
+            <h3>Research Assistant</h3>
             <p class="timeline-org">University of Delaware</p>
-            <p>Ran an eye-tracking study of expert and non-expert use of a coastal flood decision-support system.</p>
+            <ul>
+              <li>Designed and ran a controlled user study with eye-tracking to evaluate expert and non-expert decision-making in an early-warning decision-support system for an NSF-funded project.</li>
+              <li>Ran power analysis and gaze-data analysis in R, identifying interface changes associated with a 15% improvement in task success and a 33% reduction in cognitive effort.</li>
+            </ul>
           </article>
         </div>
         <aside class="credentials">
